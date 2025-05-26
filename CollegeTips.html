@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollegeTips - Gallery</title>
+    <meta name="description" content="Explore the quirky, fun, and creative side of life at CollegeTips.in through our visual gallery.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/medea/logo.webp" alt="CollegeTips Logo">
+        </div>
+        <h2>CollegeTips.in</h2>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="nav">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#"><i class="fas fa-graduation-cap"></i> Programs</a></li>
+                <li><a href="#"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Our Vibe, Your Tribe 💥</h1>
+            <p>Welcome to the madness! Here's what life at CollegeTips really looks like.</p>
+            <div class="hero-icons">
+                <i class="fas fa-camera"></i>
+                <i class="fas fa-laugh-squint"></i>
+                <i class="fas fa-users"></i>
+                <i class="fas fa-lightbulb"></i>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="decoration-circle"></div>
+            <div class="decoration-triangle"></div>
+            <div class="decoration-dots"></div>
+        </div>
+    </section>
+
+    <main>
+        <div class="featured">
+            <div class="section-title">
+                <h2>Featured Moments</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="scrolling-wrapper">
+                <div class="infinit-auto-scrow">
+                    <!-- Original Images -->
+                    <img src="/medea/co36.webp" alt="Team fun moments">
+                    <img src="/medea/office-party.webp" alt="Creative sessions">
+                    <img src="/medea/lf40.webp" alt="Party time">
+                    <img src="/medea/what-we-do.jpg" alt="Behind the scenes">
+                    <img src="/medea/lf1.webp" alt="Work and fun">
+                    <img src="/medea/fd1.webp" alt="Team building">
+                    <img src="/medea/vv8.webp" alt="Brainstorming">
+                    <img src="/medea/co36.webp" alt="Celebrations">
+                    
+                    <!-- Duplicated Images (for seamless looping) -->
+                    <img src="/medea/co36.webp" alt="Team fun moments">
+                    <img src="/medea/office-party.webp" alt="Creative sessions">
+                    <img src="/medea/lf40.webp" alt="Party time">
+                    <img src="/medea/what-we-do.jpg" alt="Behind the scenes">
+                    <img src="/medea/lf1.webp" alt="Work and fun">
+                    <img src="/medea/fd1.webp" alt="Team building">
+                    <img src="/medea/vv8.webp" alt="Brainstorming">
+                    <img src="/medea/co36.webp" alt="Celebrations">
+                </div>
+            </div>
+        </div>
+
+        <div class="categories-title">
+            <h2>Explore Our World</h2>
+            <p>Click on each category to see what's inside!</p>
+        </div>
+        
+        <div class="category-container">
+            <div class="category-cards" onclick="openModal('office')"></div>
+            <div class="category-cards" onclick="openModal('creative')"></div>
+            <div class="category-cards" onclick="openModal('party')"></div>
+            <div class="category-cards" onclick="openModal('reel')"></div>
+        </div>
+    </main>
+
+    <!-- Category Modals -->
+    <div id="office-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('office')">&times;</span>
+            <h2>Office Shenanigans</h2>
+            <div class="modal-gallery">
+                <div class="gallery-item">
+                    <img src="/medea/chooseus-image-4.webp" alt="Office fun">
+                </div>
+                <div class="gallery-item">
+                    <img src="/medea/co36.webp" alt="Chair spinning">
+                </div>
+                <div class="gallery-item">
+                    <img src="/medea/header-image-2.webp" alt="Debate session">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="creative-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('creative')">&times;</span>
+            <h2>Creative Blasts</h2>
+            <div class="modal-gallery">
+                <div class="gallery-item">
+                    <img src="/medea/251.webp" alt="Poster design">
+                </div>
+                <div class="gallery-item">
+                    <img src="/medea/19.webp" alt="Poster design">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="party-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('party')">&times;</span>
+            <h2>Work & Party</h2>
+            <div class="modal-gallery">
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="/medea/The tale of Friendship @CollegeTips🕺🏻💃🏻.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="gallery-item">
+                    <img src="/medea/lf40.webp" alt="Pizza Friday">
+                </div>
+                <div class="gallery-item">
+                    <img src="/medea/night-party.webp" alt="Intern celebration">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reel-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('reel')">&times;</span>
+            <h2>Behind the Reel</h2>
+            <div class="modal-gallery">
+                <div class="gallery-item">
+                    <img src="/medea/251.webp" alt="Poster design">
+                </div>
+                <div class="gallery-item">
+                    <img src="/medea/vv8.webp" alt="Poster design">
+                </div>
+                <div class="gallery-item">
+                    <img src="/medea/what-we-do.jpg" alt="Raw clips">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="medea/logo.webp" alt="CollegeTips Logo">
+                <h3>CollegeTips.in</h3>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <p class="footer-message">Made with ❤️ by Team CollegeTips.in</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
